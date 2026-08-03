@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: rgb(204, 243, 243);
+    border: solid rgb(128, 158, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100%;
+    position: relative;
+}
+
+.body{
+    background-color: aliceblue;
+    height: 70vh;
+    width: 45vw;
+    border: 1px solid rgb(83, 65, 110);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.image{
+    background-color: rgb(6, 77, 113);
+    height:70vh;
+    width:20vw;
+    position: absolute;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 100%;
+     
+}
+
+.form{
+    background-color: rgb(128, 166, 221);
+    position:absolute;
+    padding: 0;
+    margin-left: 382px;
+    height: 70vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    flex-wrap: wrap;
+}
+
+h1{
+    color: rgb(3, 33, 59);
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input{
+    margin-top: 30px;
+    height: 30px;
+    width: 250px;
+    margin-bottom: 0px;
+    padding: 5px;
+    
+}
+.click{
+    background-color: rgb(255, 255, 255);
+    height: 8vh;
+    width:35%;
+    margin-top: 450px;
+    margin-left: 415px;
+    margin-right: 8px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 4vh;
+    width: 5vw;
+    padding: 2px;
+    margin:2px 13px ;
+    color:rgb(8, 8, 8);
+    background-color: rgb(199, 211, 228);
+    cursor: pointer;
+}

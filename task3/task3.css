@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#6bd6fd;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* BIG CONTAINER */
+.container{
+    width:900px;
+    height:600px;
+    background:white;
+    border:5px solid red;   /* Makes the outer container obvious */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* FORM BOX */
+.form-box{
+    width:400px;
+    background:#f5f5f5;
+    border:2px solid blue;
+    padding:30px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.input-box{
+    margin-bottom:15px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:5px;
+}
+
+.input-box input{
+    width:100%;
+    padding:10px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:blue;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
