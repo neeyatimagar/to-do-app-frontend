@@ -13,18 +13,16 @@ body{
     font-family:Arial, Helvetica, sans-serif;
 }
 
-/* BIG CONTAINER */
 .container{
     width:900px;
     height:600px;
     background:white;
-    border:5px solid red;   /* Makes the outer container obvious */
+    border:5px solid red;   
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-/* FORM BOX */
 .form-box{
     width:400px;
     background:#f5f5f5;

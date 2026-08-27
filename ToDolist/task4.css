@@ -3,34 +3,170 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.container{
-    height: 100vh;
-    width: 100%;
+body {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 650px;
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(165, 225, 255);
-
- }
+    background-color: rgb(246, 142, 197);
+    border: 3px solid rgb(245, 239, 239);
+    border-radius: 5px;
+    padding: 30px;
+}
 
 h1{
- color: blue;
+ color: rgb(1, 1, 24);
 }
 
-.searchbar{
-    background-color: white;
+.searchbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
     height: 50px;
-    width: 400px;
+    width: 460px;
 }
 
+.search {
+    position: relative;
+    width: 400px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid rgb(0, 0, 11);
+}
 
+.search input {
+    width: 100%;
+    height: 100%;
+    padding: 10px 45px 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
 
+.search i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 3);
+    font-size: 18px;
+}
 
+#addTaskBtn {
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: white;
+    color: rgb(0, 0, 12);
+    font-size: 20px;
+    cursor: pointer;
+}
+#taskList {
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+    padding: 0;
+    list-style: none;
+}
 
+#taskList li {
+    width: 200px;
+    height: 250px;
+    background-color: white;
+    border: 2px solid rgb(1, 1, 1);
+    padding: 40px;
+}
+.add-page {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(180, 215, 245);
+}
 
- 
+.add-list {
+    width: 350px;
+    height: 420px;
+    background-color: rgb(180, 215, 245);
+    border: 3px solid red;
+    padding: 25px;
+    position: relative;
+}
+
+.add-list h2 {
+    text-align: center;
+    color: red;
+    margin-bottom: 25px;
+}
+
+#titleInput {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border: 2px solid red;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#descriptionInput {
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    border: 2px solid red;
+    font-size: 18px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+#priorityInput {
+    width: 150px;
+    height: 45px;
+    padding: 10px;
+    border: 2px solid red;
+    font-size: 18px;
+}
+
+#submitBtn {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+
+    width: 100px;
+    height: 45px;
+
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+}
+.priority-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.priority-buttons button {
+    width: 55px;
+    height: 25px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.priority-low {
+    border: 3px solid red;
+}
+
+.priority-high {
+    border: 3px solid blue;
+}

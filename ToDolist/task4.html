@@ -1,27 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Your CSS -->
     <link rel="stylesheet" href="./task4.css">
-    <!-- Font Awesome Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
     <title>To Do List</title>
 </head>
-<body>
-    <div class="container">
-        <h1 >To Do List</h1>
-        <div class="searchbar">
-            <div class="search">
-                <input type="text" id="taskInput" placeholder="Add a new task...">
-                <i class="fas fa-magnifying-glass"></i>
-            </div>
-            <button id="addTaskBtn"><i class="fas fa-plus"></i></button>
-        </div>
-        <ul id="taskList"></ul>
-    </div>
-</body>
 
+<body>
+
+    <!-- ==================== -->
+    <!-- FIRST / MAIN PAGE -->
+    <!-- ==================== -->
+
+    <div class="container" id="mainPage">
+
+        <h1>To Do List</h1>
+
+
+        <!-- Search Bar + Add Button -->
+        <div class="searchbar">
+
+            <div class="search">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Add a new task..."
+                >
+
+                <i class="fas fa-magnifying-glass"></i>
+
+            </div>
+
+            <button id="addTaskBtn">
+                <i class="fas fa-plus"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Three Task Containers -->
+        <ul id="taskList">
+
+            <!-- Task 1 -->
+            <li>
+
+                <h3>Task</h3>
+                <h3>Description</h3>
+                <h3>Priority</h3>
+
+                <div class="priority-buttons">
+                    <button class="priority-low"></button>
+                    <button class="priority-high"></button>
+                </div>
+
+            </li>
+
+
+            <!-- Task 2 -->
+            <li>
+
+                <h3>Task</h3>
+                <h3>Description</h3>
+                <h3>Priority</h3>
+
+                <div class="priority-buttons">
+                    <button class="priority-low"></button>
+                    <button class="priority-high"></button>
+                </div>
+
+            </li>
+
+
+            <!-- Task 3 -->
+            <li>
+
+                <h3>Task</h3>
+                <h3>Description</h3>
+                <h3>Priority</h3>
+
+                <div class="priority-buttons">
+                    <button class="priority-low"></button>
+                    <button class="priority-high"></button>
+                </div>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- ==================== -->
+    <!-- SECOND / ADD PAGE -->
+    <!-- ==================== -->
+
+    <div class="add-page" id="addPage">
+
+        <div class="add-list">
+
+            <h2>Add List</h2>
+
+
+            <!-- Title -->
+            <input
+                type="text"
+                id="titleInput"
+                placeholder="title"
+            >
+
+
+            <!-- Description -->
+            <textarea
+                id="descriptionInput"
+                placeholder="description"
+            ></textarea>
+
+
+            <!-- Priority -->
+            <input
+                type="text"
+                id="priorityInput"
+                placeholder="priority"
+            >
+
+
+            <!-- Submit Button -->
+            <button id="submitBtn">
+                Submit
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
     <script src="./task4.js"></script>
 
-    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+</body>
+
+</html>
